@@ -1,9 +1,121 @@
 <!DOCTYPE html>
-    <html>
-        <head>
-            <title>INT: Unit 4 Quiz Project</title>
-            <link href="https://fonts.googleapis.com/css2?family=Oswald&display=swap" rel="stylesheet">
+<html>
+    <head>
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Iceland&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
+
+            <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=close" />
+
+            <title>Breaking News: Blessing Oyor</title>
             <link href="style.css" rel="stylesheet">
             <script defer src="script.js"></script>
-        </head>
-    </html>
+    </head>
+    <body>
+             <div class = "intro">
+                <div class = "video-container">
+                <video src = "plane.mp4" muted loop autoplay id = "planeVideo"></video>
+                </div>
+
+                <div class = "intro-text">
+                    <h1>Blessing Oyor</h1>
+                    <p>An aspiring pilot and creative mindset</p>
+                </div>
+            </div> 
+
+        <div class="newspaper">
+            <div class = "header">
+                <nav>
+                    <ul class = "title">
+                        <li class = "location">Indianapolis, IN</li>
+                        <h1 class= "tribune"> The Blessing Chronicle</h1>
+                        <li onclick = showSidebar()><a href = "#"><span class="material-symbols-outlined">menu</span></a></li>
+                    </ul>
+
+                    <ul class = "sidebar">
+                        <li onclick = hideSidebar()><a href = "#"><span class="material-symbols-outlined">close</span></a></li>
+                        <li><a href = "#">About</a></li>
+                        <li><a href = "#">Skills</a></li>
+                        <li><a href = "#">Contact Me</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <section class = aboutMe>
+                <h2>About Me</h2>
+                <div class = "para-1">
+                <img class = profileImg alt = "picture of me" src = "profile.jpg">
+               
+                <p class = "aboutParagraph">My name is Blessing Oyor. I am a high school junior and an aspiring pilot and software engineer. I have been
+                    fascinated by technology for as long as I can remember. My passion grew from a young age with me taking my first coding class at 8 years old.
+                    This passion has led me to take computer science classes, intern in the Nextech Catapult Program, and become NCWIT's Indiana Affiliate Winner in 2025.
+                    Technology connects people on a global scale, breaking down borders and allowing us to share ideas, learn from different cultures, and collaborate with anyone, anywhere.
+                     It turns the world into a “global village,” where a student in Indiana can meet someone in Tokyo or Dubai and they can work together on a project, foster empathy, and spark innovation through shared creativity.
+                </p>
+                </div>
+
+                <h3>My Inspiration</h3>
+                <div class = "slider">
+                    <div class = "list">
+                        <img class = "slider-item" src = "Fall Rally.jpg">
+                        <img class = "slider-item" src = "car.jpg">
+                        <img class = "slider-item" src = "Dad.jpg">
+                        <img class = "slider-item" src = "Debbie.jpg">
+                        <img class = "slider-item" src = "Diana.jpg">
+                        <img class = "slider-item" src = "Loreley.jpg">
+                        <img class = "slider-item" src = "Mom.jpg">
+                        <img class = "slider-item" src = "Sisi.jpg">
+                        <img class = "slider-item" src = "Valery.jpg">
+                        <img class = "slider-item" src = "mom3.jpg">
+                        <img class = "slider-item" src = "Valery2.jpg">
+                        <img class = "slider-item" src = "Juliana.jpg">
+                    </div>
+                    <!--the next and prev buttons-->
+                    <div class = "buttons">
+                        <button id = "prev"><</button>
+                        <button id = "next">></button>
+
+                    </div>
+                </div>
+
+                <div class="marquee">
+
+                    <ul class = "marquee-content">
+                    <li class = "marquee-text"> Chai Lover </li>
+                    <li class = "marquee-text"> Tennis Pro</li>
+                    <li class = "marquee-text">Clarinet Section Leader</li>
+                    <li class = "marquee-text">Field Captain</li>
+                    <li class = "marquee-text">Programmer</li>
+                    <li class = "marquee-text">Avid Reader</li>
+                    <li class = "marquee-text">Music Lover</li>
+                    <li class = "marquee-text">STAY</li>
+                    </ul>
+                    <ul class = "marquee-content">
+                    <li class = "marquee-text"> Chai lover </li>
+                    <li class = "marquee-text"> Tennis Player</li>
+                    <li class = "marquee-text">Clarinet Section Leader</li>
+                    <li class = "marquee-text">Field Captain</li>
+                    <li class = "marquee-text">Programmer</li>
+                    <li class = "marquee-text">Avid Reader</li>
+                    <li class = "marquee-text">Music Lover</li>
+                    <li class = "marquee-text">STAY</li>
+                    </ul>
+                    <ul class = "marquee-content">
+                    <li class = "marquee-text"> Chai lover </li>
+                    <li class = "marquee-text"> Tennis Player</li>
+                    <li class = "marquee-text">Clarinet Section Leader</li>
+                    <li class = "marquee-text">Field Captain</li>
+                    <li class = "marquee-text">Programmer</li>
+                    <li class = "marquee-text">Avid Reader</li>
+                    <li class = "marquee-text">Music Lover</li>
+                    <li class = "marquee-text">STAY</li>
+                    </ul>
+
+                </div>
+            </section>
+        </div>
+           
+    </body>
+</html>
