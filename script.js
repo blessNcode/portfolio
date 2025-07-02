@@ -1,3 +1,12 @@
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 550 || document.documentElement.scrollTop > 550) {
+    document.querySelector(".tribune").style.fontSize = "3vw";
+  } else {
+    document.querySelector(".tribune").style.fontSize = "6vw";
+  }
+}
 
 function showSidebar(){
  const sidebar = document.querySelector (".sidebar");

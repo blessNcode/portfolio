@@ -41,10 +41,13 @@
   z-index: -1;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body{
   font-family: Iceland, sans-serif;
   background-color: rgb(205,198,190);
-  
 }
 
 .newspaper{
@@ -53,7 +56,10 @@ body{
 
 .header{
   margin: 2% 3% 3% 3%;
-  display: inline-flexbox;
+  position: sticky;
+  top: 0;
+  background-color: rgb(205,198,190);
+  z-index:5;
 }
 
 .header h1{
@@ -445,6 +451,24 @@ textarea:focus-within {
   position: relative;
   bottom: 0;
   width: 100%;
+}
+
+#footer a{
+  text-decoration: none;
+}
+
+.allLogos{
+  position: absolute;
+  top: 0;
+  right: 0;
+  display: flex;
+}
+
+.logo{
+  width: 30px;
+  height: 30px;
+  margin: 0 10px;
+  padding-top: 5px;
 }
 
 
