@@ -21,7 +21,7 @@
 
                 <div class = "intro-text">
                     <h1>Blessing Oyor</h1>
-                    <p>An aspiring pilot and creative mindset</p>
+                    <p>An aspiring pilot with a creative mindset</p>
                 </div>
             </div> 
 
@@ -31,25 +31,25 @@
                     <ul class = "title">
                         <li class = "location">Indianapolis, IN</li>
                         <h1 class= "tribune"> The Blessing Chronicle</h1>
-                        <li onclick = showSidebar()><a href = "#"><span class="material-symbols-outlined">menu</span></a></li>
+                        <li onclick = showSidebar()><span class="material-symbols-outlined">menu</span></li>
                     </ul>
 
                     <ul class = "sidebar">
-                        <li onclick = hideSidebar()><a href = "#"><span class="material-symbols-outlined">close</span></a></li>
-                        <li><a href = "#">About</a></li>
-                        <li><a href = "#">Skills</a></li>
+                        <li onclick = hideSidebar()><span class="material-symbols-outlined" id = "closebtn">close</span></li>
+                        <li><a href = "#aboutMe">About</a></li>
+                        <li><a href = "#Projects">Projects</a></li>
                         <li><a href = "#">Contact Me</a></li>
                     </ul>
                 </nav>
             </div>
 
-            <section class = aboutMe>
+            <section id = aboutMe>
                 <h2>About Me</h2>
                 <div class = "para-1">
                 <img class = profileImg alt = "picture of me" src = "profile.jpg">
                
-                <p class = "aboutParagraph">My name is Blessing Oyor. I am a high school junior and an aspiring pilot and software engineer. I have been
-                    fascinated by technology for as long as I can remember. My passion grew from a young age with me taking my first coding class at 8 years old.
+                <p class = "aboutParagraph">My name is Blessing Oyor. I was born in Lagos, Nigeria in 2008. I am a high school junior and an aspiring pilot and software engineer. I have been
+                    fascinated by technology for as long as I can remember. My passion grew from a young age with me taking my first coding class at 12 years old.
                     This passion has led me to take computer science classes, intern in the Nextech Catapult Program, and become NCWIT's Indiana Affiliate Winner in 2025.
                     Technology connects people on a global scale, breaking down borders and allowing us to share ideas, learn from different cultures, and collaborate with anyone, anywhere.
                      It turns the world into a “global village,” where a student in Indiana can meet someone in Tokyo or Dubai and they can work together on a project, foster empathy, and spark innovation through shared creativity.
@@ -123,15 +123,85 @@
                     </ul>
 
                 </div>
+            </section>
 
-                
+            <section id = "Projects">
                 <div class = "skills">
                     <img class = "skillLogo" src = "all.png">
                     <h3>Skills</h3>
                 </div>
-            </section>
-            <section class = "Projects">
                 <h2>Projects</h2>
+                <div class = "projectContainer-1">
+                    <div class = "projectItem">
+                        <a class = "pictureLink" href="https://blessncode.github.io/racial-divide/">
+                            <img src="racialdivide.PNG" alt = "Racial Divide Website">
+                            <div class="overlay">
+                                <div class="overlay-text">Racial Divide</div>
+                                <div class="overlay-skills">HTML / CSS</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="projectItem">
+                        <a class = "pictureLink" href="https://blessncode.github.io/choose-your-story/">
+                            <img src="chooseyourstory.PNG" alt="Choose Your Own Story Project">
+                            <div class="overlay">
+                                <div class="overlay-text">Choose Your Own Story</div>
+                                <div class="overlay-skills">HTML / CSS / JavaScript</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class = "projectItem">
+                        <a class = "pictureLink" href ="https://blessncode.github.io/int-u4-project-starter-code/">
+                            <img src="https://m.media-amazon.com/images/I/612Ph+mH-RL._UF1000,1000_QL80_.jpg" alt = "Wicked Buzzfeed Quiz Project">
+                            <div class="overlay">
+                                <div class="overlay-text">Wicked Buzzfeed Quiz</div>
+                                <div class="overlay-skills">HTML / CSS / JavaScript</div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class = "projectItem">
+                        <a class = "pictureLink" href ="https://blessncode.github.io/speed-typing-game/">
+                            <img src="speedtyping.PNG" alt = "Speed Typing Game">
+                            <div class="overlay">
+                                <div class="overlay-text">Speed Typing Game</div>
+                                <div class="overlay-skills">HTML / CSS / JavaScript</div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <section id = "contact">
+                <form action= "https://formspree.io/f/meoknbbv" method = "POST">
+                <h2>Contact Me</h2>
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea rows = "5" cols="60" name="message" placeholder="Your Message" required></textarea>
+                <button type="submit" id="submit">Submit</button>
+                </form>
+            </section>
+            <!-- Elfsight Social Media Icons | Portfolio Social Media Icons -->
+             <section id="socialMedia">
+<script src="https://static.elfsight.com/platform/platform.js" async></script>
+<div class="elfsight-app-da22b7a7-be2b-4c32-a486-4b25b41c1914" data-elfsight-app-lazy></div>
+            </section>
+
+            <section id = "footer">
+                <p>© 2025 Blessing Oyor</p>
+                <a href = "https://www.linkedin.com/in/blessing-oyor-8b0a6b1b5/">
+                    <img src = "https://cdn-icons-png.flaticon.com/512/174/174857.png" alt = "LinkedIn Logo" class = "linkedinLogo">
+                    <span>LinkedIn</span>
+                </a>
+
+                <a href = "https://github.com/blessncode">
+                    <img src = "https://cdn-icons-png.flaticon.com/512/25/25231.png" alt = "GitHub Logo" class = "githubLogo">
+                    <span>GitHub</span>
+                </a>
+                <a href = "">
+                    <img src = "">
+                </a>
+                <a href = "https://www.instagram.com/blessncode/">
+                    <img src = "" alt = "Instagram Logo" class = "instagramLogo">
+                    <span>Instagram</span>
             </section>
         </div>
            

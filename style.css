@@ -63,7 +63,7 @@ body{
   padding: 3%;
 }
 
-.aboutMe{
+#aboutMe{
   margin:3%;
 }
 
@@ -103,30 +103,56 @@ nav a:hover{
 }
 
 
-.sidebar{
-  position: absolute;
-  top:0;
-  right: 0;
-  height:100vh;
-  width: 230px;
+.sidebar {
+  height: 100%;
+  width: 0;
+  position: fixed;
   z-index: 1;
-  background-color: rgba(171, 163, 155, 0.2);
-  backdrop-filter: blur(10px);
-  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
-  display: none;
+  top: 0;
+  right: 0;
   flex-direction: column;
   align-items: flex-start;
   justify-content: flex-start;
-  margin:0;
+  background-color: rgba(171, 163, 155, 0.2);
+  backdrop-filter: blur(10px);
+  box-shadow: -10px 0 10px rgba(0, 0, 0, 0.1);
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-top: 60px;
+}
+
+.sidebar a {
+  margin-bottom: 20px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #353434;
+  display: block;
+  transition: 0.3s;
+  width:100%;
+}
+
+.sidebar a:hover {
+  background-color: #cac6c6;
+}
+
+#closebtn {
+  cursor: pointer;
+}
+
+.sidebar #closebtn {
+  position: absolute;
+  top: 0;
+  right: 35px;
+  font-size: 36px;
+  margin-left: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .sidebar li {
   width:100%;
 }
 
-.sidebar a{
-width:100%;
-}
 
 /*font size of title of different sections*/
 h2{
@@ -193,7 +219,7 @@ h3{
 .slider{
   width: 1100px;
   max-width:65vw;
-  height: 500px;;
+  height: 500px;
   margin:auto;
   position: relative;
   overflow:hidden;
@@ -211,7 +237,7 @@ h3{
 }
 
 .list img{
-  width: 1200px;
+  width: 1100px;
   max-width:65vw;
   height: 100%;
   object-fit: cover;
@@ -226,7 +252,7 @@ h3{
   justify-content: space-between;
 }
 
-button {
+#prev, #next{
   width: 50px;
   height: 50px;
   border-radius: 50%;
@@ -276,6 +302,151 @@ button {
   height: auto;
   background-color: transparent;     /* Your desired logo color */
 }
+
+#Projects h2{
+  margin-left: 3%; ;
+}
+/*projects section; made based on slider*/
+.projectContainer-1, .projectContainer-2{
+  width: 230px;
+  max-width:19w;
+  height: 230px;
+  margin: 16px 4% 30px 4%;
+  display: flex;
+}
+
+.projectItem{
+  position: relative;
+  padding:30px;
+  height:100%;
+  border-left: 1px solid rgba(29, 29, 27, .5);
+  border-right: 1px solid rgba(29, 29, 27, .5);
+}
+
+.projectItem img{
+  width: 230px;
+  max-width:19vw;
+  height: 100%;
+}
+
+
+/* text appears on top of the picture when hovered*/
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgb(205,198,190);
+}
+
+.pictureLink:hover .overlay {
+  opacity: 0.8;
+}
+
+.overlay-text {
+  color: black;
+  font-size: 20px;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.overlay-skills {
+  color: rgb(62, 62, 62);
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+#contact h2{
+  margin-left: 3%;
+  margin-top: 80px;
+}
+
+input{
+  background-color: whitesmoke;
+  width:35%;
+  margin-left: 31%;
+  font-size: 20px;
+  padding: 16px 16px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  font-family: Iceland, sans-serif;
+}
+
+textarea{
+  background-color: whitesmoke;
+  width:35%;
+  margin-left: 31%;
+  margin-bottom: 20px;
+  font-size: 20px;
+  padding: 16px 16px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  font-family: Iceland, sans-serif;
+}
+
+input:focus-within,
+textarea:focus-within {
+  outline: none;
+  border-color: hwb(36 10% 19% / 0.812);
+  border-width: 1.5px;
+  box-shadow: 0 0 10px rgba(188, 163, 92, 0.5);/*adds a glow effect*/
+}
+
+#submit {
+  background-color: rgb(199, 185, 163);
+  color: #fff;
+  font-size: 20px;
+  padding: 10px 18px;
+  text-align: center;
+  border-radius: 20px;
+  border: 1px solid rgb(199, 185, 163);
+  cursor: pointer;
+  font-family: Iceland, sans-serif;
+  display: flex;
+  margin: auto;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: 0.5s;
+}
+
+#submit:hover {
+  opacity: 80%;
+  background: #1c1c1c;
+  border-color: hwb(36 10% 19% / 0.812); /* Change to your desired focus color */
+  box-shadow: 0 0 10px rgba(210, 157, 12, 0.872);
+}
+
+#footer{
+  background-color: rgb(199, 185, 163);
+  color: #fff;
+  text-align: left;
+  font-size: 20px;
+  padding: 1px;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
 
 
 
